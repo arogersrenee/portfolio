@@ -1,3 +1,4 @@
+// Hamberger Menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
@@ -14,3 +15,7 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// Footer Copyright Date
+var date = new Date().getFullYear();
+document.getElementById("year").innerHTML = date;

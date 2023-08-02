@@ -45,23 +45,23 @@
         <section  class="portfolio-section">
             <div>
                 <h2 class="portfolio-title">Portfolio</h2>
-                <p>adipisci maiores sequi modi totam ex voluptatibus sit deserunt officiis omnis pariatur nostrum, praesentium voluptas odit?.</p>
+                <p>Adipisci maiores sequi modi totam ex voluptatibus sit deserunt officiis omnis pariatur nostrum, praesentium voluptas odit?.</p>
             </div>
             <div class="filter-section">
                 <p>Filter</p>
-                <div>
+                <div class="filter-sort">
                     <div class="filter-categories">
-                        <a href="#" class="filter-item" id="design">design</a>
+                        <a href="#" class="filter-item filter-selected" id="design">design</a>
                         <a href="#" class="filter-item" id="front-end">front-end</a>
                     </div>
                     <a href="#" id="view-all">View All</a>
                 </div>
-                <div>
-                    <picture>
-                        <source media="(min-width: 1439px)" srcset="">
-                        <source media="(min-width: 743px)" srcset="">
-                        <img src="img/mobile-placeholder.jpg">
-                     </picture>
+                <div class="portfolio-items">
+                        <picture class="portfolio-item">
+                            <source media="(min-width: 1439px)" srcset="">
+                            <source media="(min-width: 743px)" srcset="">
+                            <img src="img/mobile-placeholder.jpg">
+                         </picture>
                     <picture>
                         <source media="(min-width: 1439px)" srcset="">
                         <source media="(min-width: 743px)" srcset="">
@@ -83,8 +83,9 @@
         </section>
     </main>
     <footer>
-        <div class="wrapper">
-            <p>&copy; Copyright 2023, Ashley Rogers</p>
+        <div>
+            <p>&copy <span id="year"> </span> Ashley Rogers All Rights Reserved </p>
+            <!-- <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ashley Rogers All Rights Reserved</p> -->
         </div>
     </footer> 
 
