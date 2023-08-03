@@ -145,7 +145,7 @@ img {
 .nav-menu {
     position: fixed;
     right: -100%;
-    padding: 1rem;
+    padding: 2rem 1rem;
     top: 4.5rem;
     display: flex;
     flex-direction: column;
