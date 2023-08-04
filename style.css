@@ -94,7 +94,7 @@ body {
     margin-bottom: 1rem;
     background-color: var(--clr-dark);
     padding: 1rem 0;
-    /* make nav stick to the top, width based on the body padding */
+    /* makes nav stick to the top, width based on the body padding */
     position: fixed;
     top: 0rem;
     width: calc(100vw - 2rem);
@@ -110,10 +110,6 @@ body {
     /* border: 1px solid red; */
     fill: red;
     outline: none;
-}
-
-.nav-bar > #logo:focus{
-    fill: red;
 }
 
 img {
@@ -331,8 +327,36 @@ footer {
 
 
 
+/* || Tablet 768px */
+@media only screen and (min-width: 48rem) {
 
+    body{
+        padding: 2rem;
+    }
+    
+    .bar {
+        display: none;
+    }
 
+    .nav-bar {
+        margin-bottom: 1rem;
+        background-color: var(--clr-dark);
+        /* add padding to top (match body padding) so content doesn't show when scroll */
+        padding: 2rem 0 1rem;
+        /* offset padding to the body x 2 */
+        width: calc(100vw - 4rem); 
+        /* align with body padding */
+        left: 2rem;
+    }
+
+    .nav-menu {
+        position: static;
+        flex-direction:row;
+        /* justify-content: center; */
+        width: 100%;
+        
+    }
+}
 
 
 
