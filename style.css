@@ -408,7 +408,6 @@ footer {
         position: static;
         flex-direction:row;
         width: fit-content;
-        padding: 0rem;
         gap: 2rem;
     }
 
@@ -465,6 +464,7 @@ footer {
     .filter-section {
         gap: 1.5rem
     }
+
     
     .filter-categories {
         /* gap: 1.25rem; */
@@ -499,6 +499,14 @@ footer {
     .wrapper{
         max-width: 74rem;
         margin: 0 auto;
+    }
+
+    .nav-menu {
+        gap: 2.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
     }
 
     .portfolio-items {

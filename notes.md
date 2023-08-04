@@ -6,9 +6,11 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
 https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/
 
 # to do: 
-- make filter stick to portion of page (esp on mobile)
+- make filter stick to portion of page (esp on mobile)?
 - focus elements: https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Keyboard#interactive_elements_must_be_focusable
-- add wrapper to contain to center, starting with tablet size?
+- JS make name apear in nav after certain amount of scroll
+- JS sort cards + style class highligts
+- back to top button? (maybe when i have more content)
 
 # notes
 - current site, image width is 640x640
