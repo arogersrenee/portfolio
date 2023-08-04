@@ -15,3 +15,4 @@ https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-pict
 - image file size 300/400kb or lower
 - 144 dpi
 - increased the target touch point for nav links: https://stackoverflow.com/questions/11078509/how-to-increase-the-clickable-area-of-a-a-tag-button
+- nav stick to the top, position sticky on the header: https://markoskon.com/fixed-navbar-on-top-with-position-sticky/

@@ -86,10 +86,15 @@ body {
     background-color: var(--clr-dark);
     color: var(--clr-brand);
     display: grid; /* may not need this */
-    gap: 2rem;
+    gap: 1rem;
 }
 
 /* MAKE NAVIGATION STICK TO TOP */
+header {
+    position: sticky;
+    top: 0;
+}
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -97,10 +102,7 @@ body {
     margin-bottom: 1rem;
     background-color: var(--clr-dark);
     padding: 1rem 0;
-    /* makes nav stick to the top, width based on the body padding */
-    position: fixed;
-    top: 0rem;
-    width: calc(100vw - (var(--pad-body-mobile)*2));
+    /* width: calc(100vw - (var(--pad-body-mobile)*2)); */
 }
 
 #logo {
@@ -167,7 +169,7 @@ img {
     position: fixed;
     right: -100%;
     padding: 2rem 1rem;
-    top: 4.5rem;
+    top: 5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -209,8 +211,8 @@ footer p {
 /* || main section */
 main {
     display: grid;
-    gap: 2.5rem;
-    margin-top: 2.5rem;
+    gap: 3rem;
+    /* margin-top: 1.5rem; */
 }
 
 .hero-subhead, h2{
@@ -364,6 +366,11 @@ footer {
     body{
         padding: 2rem;
     }
+
+    .wrapper{
+        max-width: 64rem;
+        margin: 0 auto;
+    }
     
     .hamburger {
         display: none;
@@ -373,9 +380,9 @@ footer {
         margin-bottom: 1rem;
         background-color: var(--clr-dark);
         /* add padding to top (match body padding) so content doesn't show when scroll */
-        padding: 2rem 0 1rem;
+        padding: 1rem 0;
         /* offset padding to the body x 2 */
-        width: calc(100vw - (var(--pad-body-tablet)*2)); 
+        /* width: calc(100vw - (var(--pad-body-tablet)*2));  */
         /* align with body padding */
         left: 2rem;
     }
@@ -414,18 +421,17 @@ footer {
         z-index: 1;
         padding: 2rem 1rem;
         margin: -2rem -1rem;
-
     }
 
-    main {
-        /* margin-top: 3.5rem; */
+    .nav-link-active {
+        color: var(--clr-accent);
     }
 
     .hero-section {
         padding: 2rem 0;
     }
 
-    h2{
+    h2 {
         font-size: 1rem;
     }
 
@@ -435,12 +441,12 @@ footer {
 
     .hero-intro {
         line-height: 1.25em;
-        width: 60vw;
-        font-size: clamp(1.25rem, 2vw, 2rem);
+        /* width: 60vw; */
+        font-size: clamp(1.25rem, 2vw, 1.55rem);
     }
 
     .hero-title {
-        font-size: clamp(3rem, 7vw, 6rem);
+        font-size: clamp(3rem, 7vw, 5rem);
     }
 
     h2 {
@@ -474,15 +480,38 @@ footer {
 
     footer {
         background-color: var(--clr-dark);
-        padding: 2rem 0 1rem;
+        padding: 2rem 0 0 0rem;
         font-size: 0.75rem;
          /* makes nav stick to the bottom, width based on the body padding */
-         position: fixed;
+         /* position: fixed;
          bottom: 0rem;
-         width: calc(100vw - (var(--pad-body-tablet)*2));
+         width: calc(100vw - (var(--pad-body-tablet)*2)); */
     }
+
 }
 
+
+
+
+/* === DESKTOP (1440px) === */
+@media (min-width: 90em) {
+
+    .wrapper{
+        max-width: 74rem;
+        margin: 0 auto;
+    }
+
+    .portfolio-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-title + p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        width: 60%;
+    }
+
+}
 
 
 
