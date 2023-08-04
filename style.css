@@ -58,7 +58,7 @@ table {
     --ff-primary: "Lato", sans-serif;
     --ff-display: 'Changa One', cursive;
 
-    --lh-body-large: 1.5rem;
+    --lh-body-mobile-large: 1.5rem;
     --lh-body: 1.25rem;
     
     --fw-regular: 400;
@@ -73,12 +73,15 @@ table {
     --clr-brand: rgb(130, 204, 238);
     --clr-hover: rgb(28, 167, 232);
 
+    --pad-body-mobile: 1rem;
+    --pad-body-tablet: 2rem;
+
 }
 
 /* mobile */
 
 body {
-    padding: 1rem;
+    padding: var(--pad-body-mobile);
     font-family: var(--ff-primary);
     background-color: var(--clr-dark);
     color: var(--clr-brand);
@@ -97,7 +100,7 @@ body {
     /* makes nav stick to the top, width based on the body padding */
     position: fixed;
     top: 0rem;
-    width: calc(100vw - 2rem);
+    width: calc(100vw - (var(--pad-body-mobile)*2));
 }
 
 #logo {
@@ -111,10 +114,27 @@ body {
     outline: none;
 }
 
+.nav-bar > a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.page-title {
+    color: var(--clr-brand);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    display: none;
+}
+
 img {
     display: block;
     width: 100%;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
 }
 
 #hamburger {
@@ -135,6 +155,12 @@ img {
 .nav-link {
     text-decoration: none;
     color: var(--clr-accent);
+     /* make target touch point larger */
+     display: inline-block;
+     position: relative;
+     z-index: 1;
+     padding: 0.5rem 1rem;
+     margin: -0.5rem -1rem;
 }
 
 .nav-menu {
@@ -174,6 +200,12 @@ img {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+footer p {
+    /* background-color: var(--clr-dark); */
+    /* padding: 1rem 0 1rem; */
+    font-size: 0.75rem;
+}
+
 /* || main section */
 main {
     display: grid;
@@ -197,7 +229,7 @@ main {
 }
 
 .hero-intro {
-    line-height:var(--lh-body-large);
+    line-height:var(--lh-body-mobile-large);
     width: 80%;
     font-size: 1.125rem;
 }
@@ -284,7 +316,7 @@ p {
 #view-all {
     color: var(--clr-accent);
     text-decoration: none;
-    color: var(--clr-brand);
+    text-transform: uppercase;
 }
 
 #view-all:hover{
@@ -343,9 +375,26 @@ footer {
         /* add padding to top (match body padding) so content doesn't show when scroll */
         padding: 2rem 0 1rem;
         /* offset padding to the body x 2 */
-        width: calc(100vw - 4rem); 
+        width: calc(100vw - (var(--pad-body-tablet)*2)); 
         /* align with body padding */
         left: 2rem;
+    }
+
+    .nav-bar > a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--clr-brand);
+    }
+
+    .page-title {
+        color: var(--clr-brand);
+        text-decoration: none;
+        font-size: 1.125rem;
+        font-weight: var(--fw-bold);
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        display: block;
     }
 
     .nav-menu {
@@ -353,10 +402,84 @@ footer {
         flex-direction:row;
         width: fit-content;
         padding: 0rem;
+        gap: 2rem;
     }
 
     .nav-link {
-        color: var(--clr-brand)
+        color: var(--clr-brand);
+        font-size: 0.85rem;
+        /* make target touch point larger */
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        padding: 2rem 1rem;
+        margin: -2rem -1rem;
+
+    }
+
+    main {
+        /* margin-top: 3.5rem; */
+    }
+
+    .hero-section {
+        padding: 2rem 0;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    .hero-subhead {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .hero-intro {
+        line-height: 1.25em;
+        width: 60vw;
+        font-size: clamp(1.25rem, 2vw, 2rem);
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 7vw, 6rem);
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-title + p {
+        gap: 2rem;
+        width: 60vw;
+    }
+
+    .filter-section > p, #view-all {
+        font-size: 1.125rem;
+    }
+
+    .filter-section {
+        gap: 1.5rem
+    }
+    
+    .filter-categories {
+        /* gap: 1.25rem; */
+    }
+
+    .filter-item {
+        font-size: 1.125rem;
+    }
+
+    .portfolio-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        background-color: var(--clr-dark);
+        padding: 2rem 0 1rem;
+        font-size: 0.75rem;
+         /* makes nav stick to the bottom, width based on the body padding */
+         position: fixed;
+         bottom: 0rem;
+         width: calc(100vw - (var(--pad-body-tablet)*2));
     }
 }
 
