@@ -38,17 +38,17 @@ viewAllLabel.addEventListener('click', highlightViewAll);
 function highlightDesign() {
     designLabel.classList.toggle("label-highlight");
     frontEndLabel.classList.remove("label-highlight");
-    viewAllLabel.classList.remove("view-all-highlight")
+    viewAllLabel.classList.remove("view-all-highlight");
 }
 
 function highlightFrontEnd() {
     frontEndLabel.classList.toggle("label-highlight");
     designLabel.classList.remove("label-highlight");
-    viewAllLabel.classList.remove("view-all-highlight")
+    viewAllLabel.classList.remove("view-all-highlight");
 }
 
 function highlightViewAll() {
-    viewAllLabel.classList.toggle("view-all-highlight")
+    viewAllLabel.classList.toggle("view-all-highlight");
     frontEndLabel.classList.remove("label-highlight");
     designLabel.classList.remove("label-highlight");
 }
