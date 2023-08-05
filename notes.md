@@ -9,7 +9,7 @@ https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-pict
 - make filter stick to portion of page (esp on mobile)?
 - focus elements: https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Keyboard#interactive_elements_must_be_focusable
 - JS make name apear in nav after certain amount of scroll
-- JS sort cards + style class highligts
+- JS sort cards + style class highligts: https://codepen.io/porsake/pen/GRqobQq
 - back to top button? (maybe when i have more content)
 
 # notes

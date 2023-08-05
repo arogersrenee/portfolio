@@ -346,6 +346,61 @@ p {
 
 
 
+
+
+
+
+/* NEW FILTER BELOW */
+
+    input[type="radio"]{
+        display: none;
+    }
+
+    .filter-items label {
+        text-decoration: none;
+        color: var(--clr-brand);
+        border: 1px solid var(--clr-brand);
+        padding: 0.5rem 1rem;
+        border-radius: 10rem;
+        font-size: var(--fs--body-small);
+    }
+
+    .view-all label {
+        color: var(--clr-brand);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .view-all-highlight {
+        color: var(--clr-accent);
+        text-decoration: none;
+        font-weight: var(--fw-bold);
+        border-bottom: 1px solid var(--clr-accent);
+        padding-bottom: 0.5rem;
+    }
+
+    .label-highlight {
+        background-color: var(--clr-accent);
+        border: 1px solid var(--clr-accent);
+        color: var(--clr-dark);
+    }
+
+
+    input[type="radio"][id="design"]:checked ~ .front-end {
+        display: none;
+    }
+
+    input[type="radio"][id="front-end"]:checked ~ .design {
+        display: none;
+    }
+
+
+/* NEW FILTER ABOVE */
+
+
+
+
+
 /* || portfolio section */
 
 .portfolio-items{
@@ -380,7 +435,7 @@ footer {
         margin-bottom: 1rem;
         background-color: var(--clr-dark);
         /* add padding to top (match body padding) so content doesn't show when scroll */
-        padding: 1rem 0;
+        padding: 1rem 0 0;
         /* offset padding to the body x 2 */
         /* width: calc(100vw - (var(--pad-body-tablet)*2));  */
         /* align with body padding */
