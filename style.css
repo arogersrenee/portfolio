@@ -310,6 +310,15 @@ p {
         display: none;
     }
 
+    /* input[type="radio"][id="view-all"]:checked ~ .design,
+    input[type="radio"][id="view-all"]:checked ~ .front-end {
+        display: block;
+    } */
+
+    fieldset {
+        display: none;
+    }
+
 
 /* NEW FILTER ABOVE */
 
@@ -437,9 +446,9 @@ footer {
     }
 
     
-    .filter-categories {
-        /* gap: 1.25rem; */
-    }
+    /* .filter-categories {
+        gap: 1.25rem;
+    } */
 
     .filter-item {
         font-size: 1.125rem;
