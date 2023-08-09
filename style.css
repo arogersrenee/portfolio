@@ -215,7 +215,7 @@ main {
     /* margin-top: 1.5rem; */
 }
 
-.hero-subhead, h2{
+.hero-subhead, .portfolio-title {
     color: var(--clr-accent);
     text-transform: uppercase;
     font-weight: var(--fw-bold);
@@ -348,7 +348,7 @@ footer {
     }
 
     .wrapper{
-        max-width: 64rem;
+        max-width: clamp(64rem, 90vw, 80rem);
         margin: 0 auto;
     }
     
@@ -410,11 +410,7 @@ footer {
         padding: 2rem 0;
     }
 
-    h2 {
-        font-size: 1rem;
-    }
-
-    .hero-subhead {
+    .hero-subhead, .portfolio-title {
         font-size: clamp(1rem, 2vw, 1.5rem);
     }
 
@@ -426,10 +422,6 @@ footer {
 
     .hero-title {
         font-size: clamp(3rem, 7vw, 5rem);
-    }
-
-    h2 {
-        font-size: 1.5rem;
     }
 
     .portfolio-title + p {
@@ -476,10 +468,10 @@ footer {
 /* === DESKTOP (1440px) === */
 @media (min-width: 90em) {
 
-    .wrapper{
-        max-width: 74rem;
+    /* .wrapper{
+        max-width: 80rem;
         margin: 0 auto;
-    }
+    } */
 
     .nav-menu {
         gap: 5rem;
@@ -500,10 +492,6 @@ footer {
     }
 
 }
-
-
-
-
 
 /* h2 {
     font-family: var(--ff-display);
